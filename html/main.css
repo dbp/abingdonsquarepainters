@@ -176,8 +176,29 @@ p {
 }
 
 
-#carousel { height: 125px; overflow:hidden; }
-#carousel .viewport { float: left; width: 630px; height: 125px; overflow: hidden; position: relative; }
-#carousel .disable { visibility: hidden; }
-#carousel .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
-#carousel .overview li{ float: left; margin: 0 10px 0 0; padding: 1px; height: 121px;}
+#carousel {
+        width: 600px;
+        overflow:hidden;
+}
+#carousel ul {
+        position: relative;
+        padding: 0;
+}
+#carousel li {
+        width: 140px;
+        height: 120px;
+        float: left;
+        list-style: none;
+        padding: 5px;
+}
+
+#carousel li img {
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+#carousel li p {
+    margin: 0;
+    text-align: center;
+}

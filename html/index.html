@@ -4,8 +4,9 @@
     <link rel="stylesheet" href="main.css"></link>
     <script type="text/javascript" src="//use.typekit.net/qtm7epo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="jquery.tinycarousel.min.js"></script>
+    <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="jquery.infinite-carousel.js"></script>
+    <link rel="stylesheet" href="jquery.infinite-carousel.css"></link>
   </head>
   <body>
     <div id="wrap">
@@ -38,24 +39,52 @@
       </div> <!-- #worksby -->
       <div id="main">
         <div id="news">
+          <div class="carousel_next"></div>
+          <div class="carousel_prev"></div>
           <div id="carousel">
-          <div class="viewport">
-            <ul class="overview" style="width: 1560px; left: -692.8516386683957px;">
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_2009125359346250.jpg" alt="image 7"></li>
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_200941323111701030.jpg" alt="image 5"></li>
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_20095315193761230.jpg" alt="image 6"></li>
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_2009118124536180.jpg" alt="image 4"></li>
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_2009125426276250.jpg" alt="image 3"></li>
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_20093251933532840.jpg" alt="image 2"></li>
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_200941422473511040.jpg" alt="image 1"></li>
-              <li><img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_20095319403061230.jpg" alt="image 0"></li>
-            </ul>
+            <ul>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_2009125359346250.jpg" alt="image 7">
+                  <p>Peggy Anderson</p>
+                </li>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_200941323111701030.jpg" alt="image 5">
+                  <p>Richard Baumann</p>
+                </li>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_20095315193761230.jpg" alt="image 6">
+                  <p>Francine Fisch</p>
+                </li>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_2009118124536180.jpg" alt="image 4">
+                  <p>Tony Mavilia</p>
+                </li>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_2009125426276250.jpg" alt="image 3">
+                  <p>Jeanne Morrow</p>
+                </li>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_20093251933532840.jpg" alt="image 2">
+                  <p>Meredith Nieves</p>
+                </li>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_200941422473511040.jpg" alt="image 1">
+                  <p>Jerelyn Shunk</p>
+                </li>
+                <li>
+                  <img src="http://www.abingdonsquarepainters.com/static/media/images/painting/thumb_20095319403061230.jpg" alt="image 0">
+                  <p>Audrey Taylor</p>
+                </li>
+              </ul>
+            </div>
+            <div class="thslide_nav_next">
+              <a href="#"> </a>
+            </div>
           </div>
-        </div>
         <script type="text/javascript">
           $(function () {
-          $("#carousel").tinycarousel({interval: true, display: 1, controls: false, intervaltime: 4000});
-          $("#carousel").tinycarousel_start();
+          $('#carousel').carousel('.carousel_prev', '.carousel_next', { transition: 2000 });
+          setInterval(function() { $(".carousel_next").click() }, 5000);
           });
         </script>
         <p style="font-weight: 500; padding-bottom: 20px;">We are a cooperative,  a space where abstract, representational, and conceptual artists can work. We invite you to browse this site, get acquainted with the work of our members and hope to meet you at our annual exhibition or Long Island City Open Studios!</p>
