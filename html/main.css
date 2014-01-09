@@ -1,0 +1,183 @@
+h1,h2,h3,h4 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+
+#heading li a {
+    font-family: "museo-slab", san-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover, a.active {
+    color: #c65619;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: "museo-sans-rounded", sans-serif;
+    font-weight: 300;
+    background-color: #e9e5cd;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+#heading {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 30px;
+}
+
+#heading h1 {
+    padding: 0;
+}
+
+#heading ul {
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    margin: 0;
+}
+
+#heading li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+#title {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#title span {
+    display: block;
+}
+
+#title span.d {
+    margin-left: 30px;
+}
+
+#contact {
+    padding-left: 50px;
+}
+
+
+#footer {
+    border-top: 1px solid #666;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#worksby {
+    width: 150px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#worksby h3 {
+    margin: 0;
+}
+
+#main {
+    width: 600px;
+    display: inline-block;
+    vertical-align: block;
+}
+
+#main h2:first-child {
+    margin-top: 0;
+}
+
+#worksby ul {
+    padding: 0;
+}
+
+#worksby li {
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+#worksby a {
+    color: #c65619;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+#worksby a:hover {
+    text-decoration: underline;
+}
+
+#news {
+    width: 600px;
+    margin-left: 30px;
+}
+
+#news ul {
+    padding: 0;
+}
+
+#news .date {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#work h2 {
+    margin-left: 50px;
+}
+
+#work ul {
+    margin: 0;
+}
+
+#work li, #artist li {
+    width: 45%;
+    display: inline-block;
+    padding: 2%;
+}
+
+#work img, #artist img {
+    max-width: 100%;
+}
+
+#work img, #work .caption, #work h4 {
+    text-align: center;
+}
+
+#work h4 {
+    font-size: 1.1em;
+    margin: 3px;
+}
+
+
+#about, #artist {
+    width: 600px;
+    margin-left: 30px;
+}
+
+
+#carousel { height: 125px; overflow:hidden; }
+#carousel .viewport { float: left; width: 630px; height: 125px; overflow: hidden; position: relative; }
+#carousel .disable { visibility: hidden; }
+#carousel .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
+#carousel .overview li{ float: left; margin: 0 10px 0 0; padding: 1px; height: 121px;}
