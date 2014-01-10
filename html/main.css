@@ -124,7 +124,7 @@ p {
     line-height: 1.4em;
 }
 
-#worksby a:hover {
+#worksby a:hover, a.active {
     text-decoration: underline;
 }
 
